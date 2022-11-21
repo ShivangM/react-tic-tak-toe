@@ -7,7 +7,7 @@ require('dotenv').config()
 //Using CORS policy
 const cors = require("cors");
 const corsOptions = {
-    origin: process.env.CLIENT_URL || 'http://localhost:3000',
+    origin: process.env.CLIENT_URL || 'https://react-tik-tac-toe-eight.vercel.app/',
     credentials: true,
     optionSuccessStatus: 200
 }
