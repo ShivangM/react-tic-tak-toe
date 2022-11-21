@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input {
+        @apply px-4 py-2 rounded outline-none focus:ring-2 focus:ring-blue-600 bg-gray-300 placeholder:text-gray-600 border-none text-gray-600
+    }
+
+    .button {
+        @apply bg-gradient-to-br from-yellow-500 to-rose-700 rounded px-4 py-1 shadow-md hover:from-yellow-400 hover:to-rose-600 text-xl cursor-pointer
+    }
+
+    .page-container {
+        @apply flex flex-col items-center px-4 py-8 bg-gray-700 text-gray-200 space-y-8 h-full
+    }
+
+    .info-bg {
+        @apply bg-gray-900/40 rounded p-2 items-center
+    }
+}
