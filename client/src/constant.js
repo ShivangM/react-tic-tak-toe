@@ -1,2 +1,2 @@
-const serverURL = process.env.SERVER_URL || 'https://react-tik-tac-toe-server.vercel.app'
+const serverURL = process.env.REACT_APP_SERVER_URL || 'http://localhost:5000'
 module.exports = serverURL;
