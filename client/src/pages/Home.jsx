@@ -14,7 +14,7 @@ const Home = () => {
         e.preventDefault();
 
         const options = {
-            url: `http://${serverURL}/join_room`,
+            url: `${serverURL}/join_room`,
             method: 'POST',
             withCredentials: true,
             headers: {
@@ -44,7 +44,7 @@ const Home = () => {
 
     //Function to call server and get new Room id 
     const genereateUniqueID = () => {
-        axios.get(`http://${serverURL}/create_room`).then(res => {
+        axios.get(`${serverURL}/create_room`).then(res => {
             browserHistory.push('/play/' + res.data)
         })
     }

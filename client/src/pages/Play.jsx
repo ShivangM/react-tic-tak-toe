@@ -11,7 +11,7 @@ import Loading from '../components/Play/Chat/Loading';
 let socket;
 const Play = () => {
 
-    const ENDPT = `http://${serverURL}/`
+    const ENDPT = `${serverURL}/`
     //set global user
     const { user, setUser } = useContext(UserContext);
     //To Get Paramters from URL and display
